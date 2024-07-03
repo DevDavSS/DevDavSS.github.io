@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body style="font-size: 30px;">
-    APARECE LA PAGINA
+<body>
+    <div id="celphone_resolution" class="celphone_resolution">
+        <nav class="cellphone_nav"></nav>
+        <div class="selfimage_container"></div>
+        <div class="personal_pres_container"></div>
+        <div class="habilities_container"></div>
+    </div>
+
+    <div id="tablet_resolution" class="hidden"></div>
+    <div id="pc_resolution" class="hidden"></div>
+
+
 </body>
+
+<!--<script>
+     window.addEventListener('resize', function() {
+        var desktopContent = document.getElementById('pc_resolution');
+        var mobileContent = document.getElementById('celphone_resolution');
+
+            if (window.innerWidth > 600) {
+                
+                desktopContent.classList.remove('hidden');
+                mobileContent.classList.add('hidden'); 
+            } else {
+               
+                desktopContent.classList.add('hidden'); 
+                mobileContent.classList.remove('hidden');
+            }
+        });
+
+        // Ejecutar la verificación al cargar la página
+        window.dispatchEvent(new Event('resize'));
+
+</script> -->
 </html>
